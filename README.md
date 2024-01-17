@@ -30,7 +30,7 @@ int main() {
 	std::vector<uint8_t> data = {'H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd', '!'};
 
 	// Encrypt the data
-	std::vector<uint8_t> encrypted;
+	std::vector<uint8_t> encrypted = {};
 	CFxms::Status status = CFxms::Encrypt(key, data, encrypted, CFxms::Mode::OptimizeEncryption);
 	if (status != CFxms::Status::Success) {
 		std::cout << "Encryption failed" << std::endl;
@@ -38,7 +38,7 @@ int main() {
 	}
 
 	// Decrypt the data
-	std::vector<uint8_t> decrypted;
+	std::vector<uint8_t> decrypted = {};
 	status = CFxms::Decrypt(key, encrypted, decrypted, CFxms::Mode::OptimizeEncryption);
 	if (status != CFxms::Status::Success) {
 		std::cout << "Decryption failed" << std::endl;
