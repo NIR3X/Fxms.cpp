@@ -15,16 +15,16 @@
  */
 std::string getStatusMessage(CFxms::Status status) {
 	switch (status) {
-		case CFxms::Status::Success:
-			return "Success";
-		case CFxms::Status::InvalidKeyLength:
-			return "Invalid key length";
-		case CFxms::Status::InvalidDataLength:
-			return "Invalid data length";
-		case CFxms::Status::DecryptionFailed:
-			return "Decryption failed";
-		default:
-			return "Unknown status";
+	case CFxms::Status::Success:
+		return "Success";
+	case CFxms::Status::InvalidKeyLength:
+		return "Invalid key length";
+	case CFxms::Status::InvalidDataLength:
+		return "Invalid data length";
+	case CFxms::Status::DecryptionFailed:
+		return "Decryption failed";
+	default:
+		return "Unknown status";
 	}
 }
 
