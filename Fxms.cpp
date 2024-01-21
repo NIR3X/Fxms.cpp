@@ -3,8 +3,6 @@
 #include "Rand.h"
 #include "Shuffler.h"
 
-const uint64_t CFxms::HashLen = sizeof(uint64_t), CFxms::MaskLen = 16, CFxms::KeyLen = 256;
-
 static __forceinline uint64_t getHash(const std::vector<uint8_t>& data) {
 	return CFnv::Hash1a64(data.data(), data.size());
 }

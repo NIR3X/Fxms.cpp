@@ -8,7 +8,7 @@
  */
 class CFxms {
 public:
-	static const uint64_t HashLen, MaskLen, KeyLen;
+	static constexpr uint64_t HashLen = sizeof(uint64_t), MaskLen = 16, KeyLen = 256;
 
 	/**
 	 * @brief The Mode enum specifies the encryption or decryption mode.
