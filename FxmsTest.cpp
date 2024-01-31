@@ -56,7 +56,7 @@ int main() {
 	}
 
 	// Check if the decrypted data matches the original data
-	if (data != decrypted) {
+	if (decrypted != data) {
 		printf("Mismatch: decrypted data does not match the original data\n");
 		return 1;
 	}
